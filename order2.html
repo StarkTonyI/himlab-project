@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="libs/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/basket.css" />
+    <link rel="stylesheet" href="css/basket-one.css" />
+    <link rel="stylesheet" href="css/order.css" />
+    <link rel="stylesheet" href="css/order2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Химлаб</title>
+  </head>
+
+  <body>
+   
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="dropdown btn-mobile">
+            <div class="dropbtn">
+              <h3 class="dropbtn__lang" data-translate="language-select">RUS</h3>
+              <div class="dropdown-content">
+                <!-- //popup -->
+                <div class="popup">
+                  <form class="form content order-form" action="../../se.php" method="post">
+                    <h3 class="form__title" data-translate="choose-language">Выберите язык</h3>
+                    <a class="close">
+                      <img src="images/Close.png">
+                    </a>
+                    <select name="" id="input0" required="required"
+                    data-json="order2"
+                    class="dropbtn__lang lang language-selector">
+                      <option
+                        style="background-image:url(images/Hicon.png); background-repeat: no-repeat; padding-left: 29px; padding-top:-10px"
+                        value="RUS" required>RUS
+                      </option>
+                      <option
+                        style="background-image:url(images/Hicon.png); background-repeat: no-repeat; padding-left: 29px; padding-top:-10px"
+                        value="ENG">ENG
+                      </option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="phone">+ 7 (499) 490-51-07</h3>
+        </div>
+        <div class="header__bottom">
+          <a href="/about" class="logo color-black" data-translate="logo">ХИМЛАБ</a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <div class="dropdown-one">
+                  <a class="menu__list-link dropbtn-one color-black" href="/catalog" data-translate="catalog">Каталог</a>
+                  <div class="dropdown-content-list">
+                    <div class="dropdown-content-wrap">
+                      <div class="dropdown-content-one">
+                        <a href="#" data-translate="promotions">Акции</a>
+                        <a href="#" data-translate="suppliers">Поставщики</a>
+                        <a href="#" data-translate="warehouse">Склад</a>
+                        <a href="#" data-translate="reagents">Реактивы и Стандарты</a>
+                        <a href="#" data-translate="clinic">Клиника и Диагностика</a>
+                        <a href="#" data-translate="biochemistry">Биохимия и Биотехнологии</a>
+                        <a href="#" data-translate="cosmeceuticals">Космецевтика</a>
+                      </div>
+                      <div class="dropdown-content-two">
+                        <a href="#" data-translate="analytical-equipment">Аналитическое оборудование</a>
+                        <a href="#" data-translate="laboratory-equipment">Лабораторное оборудование</a>
+                        <a href="#" data-translate="life-sciences-equipment">Оборудование Life Sciences</a>
+                        <a href="#" data-translate="consumables">Расходные материалы</a>
+                        <a href="#" data-translate="pharmaceuticals">Фармацевтика</a>
+                        <a href="#" data-translate="veterinary">Ветеринария</a>
+                        <a href="#" data-translate="microelectronics">Микроэлектроника</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link color-black" href="/card" data-translate="promotions">Акции</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link color-black" href="/price" data-translate="delivery">Доставка</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link color-black" href="/index" data-translate="about-us"> О нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link color-black" href="/contacts" data-translate="contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="header__search">
+            <div class="input-hint">
+              <input type="search" name="q" id="product-search" placeholder="Поиск" class="search" data-translate="search-placeholder">
+              <div id="hints" class="hint-list"></div>
+            </div>
+            <a href="#" value="Найти" class="header__sign link" data-translate="search-button">Найти</a>
+          </form>
+          <div class="header__basket">
+            <a href="/order" class="header__bag">
+              <svg width="28" height="31" viewBox="0 0 28 31" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.0006 0.833496C10.5028 0.833496 7.66725 3.66903 7.66725 7.16683V7.74783C7.15972 7.84801 6.6906 7.99104 6.24007 8.19757C4.89949 8.81213 3.7646 9.80029 2.97147 11.0436C2.49141 11.7961 2.20656 12.6379 1.98279 13.6648C1.76356 14.6709 1.58935 15.9252 1.36773 17.521L1.35545 17.6093C1.07024 19.6628 0.847285 21.268 0.779566 22.5611C0.71081 23.8739 0.793986 24.9679 1.18892 25.9723C1.83442 27.6139 3.02626 28.9828 4.56348 29.848C5.504 30.3773 6.57618 30.6102 7.88599 30.7227C9.17603 30.8335 10.7967 30.8335 12.8698 30.8335H15.1313C17.2045 30.8335 18.8251 30.8335 20.1152 30.7227C21.425 30.6102 22.4972 30.3773 23.4377 29.848C24.9749 28.9828 26.1668 27.6139 26.8122 25.9723C27.2072 24.9679 27.2904 23.8739 27.2216 22.5611C27.1539 21.268 26.9309 19.6627 26.6457 17.6092L26.6334 17.5209C26.4118 15.9252 26.2376 14.6709 26.0184 13.6648C25.7946 12.6379 25.5098 11.7961 25.0297 11.0436C24.2366 9.80029 23.1017 8.81213 21.7611 8.19757C21.3106 7.99104 20.8414 7.84801 20.3339 7.74783V7.16683C20.3339 3.66903 17.4984 0.833496 14.0006 0.833496ZM8.66725 14.8335C8.11497 14.8335 7.66725 14.3858 7.66725 13.8335V9.801C7.45008 9.86118 7.25539 9.93226 7.07352 10.0156C6.08265 10.4699 5.24382 11.2003 4.65759 12.1192C4.35498 12.5936 4.13528 13.1804 3.93694 14.0906C3.73593 15.013 3.57157 16.1915 3.34303 17.837C3.04983 19.9481 2.83953 21.4685 2.77683 22.6657C2.71465 23.853 2.80576 24.6188 3.0502 25.2405C3.52731 26.4538 4.40824 27.4656 5.54445 28.1051C6.12656 28.4327 6.87256 28.6283 8.05714 28.73C9.25157 28.8326 10.7865 28.8335 12.9178 28.8335H15.0834C17.2147 28.8335 18.7496 28.8326 19.944 28.73C21.1286 28.6283 21.8746 28.4327 22.4567 28.1051C23.5929 27.4656 24.4739 26.4538 24.951 25.2405C25.1954 24.6188 25.2865 23.853 25.2243 22.6657C25.1616 21.4685 24.9513 19.9481 24.6581 17.837C24.4296 16.1915 24.2652 15.013 24.0642 14.0906C23.8659 13.1804 23.6462 12.5936 23.3436 12.1192C22.7573 11.2003 21.9185 10.4699 20.9277 10.0156C20.7458 9.93226 20.5511 9.86118 20.3339 9.801V13.8335C20.3339 14.3858 19.8862 14.8335 19.3339 14.8335C18.7816 14.8335 18.3339 14.3858 18.3339 13.8335V9.54015C17.4888 9.50084 16.4457 9.50016 15.0834 9.50016H12.9178C11.5555 9.50016 10.5124 9.50084 9.66725 9.54015V13.8335C9.66725 14.3858 9.21954 14.8335 8.66725 14.8335ZM15.1438 7.50016C16.3969 7.50015 17.4434 7.50014 18.3339 7.53837V7.16683C18.3339 4.7736 16.3938 2.8335 14.0006 2.8335C11.6073 2.8335 9.66725 4.7736 9.66725 7.16683V7.53837C10.5578 7.50014 11.6043 7.50015 12.8574 7.50016H15.1438Z"
+                fill="#121212" />
+            </svg>
+            </a>
+          </div>
+          <button type="button" class="mobile-nav-button">
+            <span class="mobile-nav-button__icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav">
+        <nav class="mobile-nav-list">
+          <nav class="menu mobile-nav-button">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link active-link" href="/basket" data-translate="basket">Корзина</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/catalog" data-translate="catalog">Каталог</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/card" data-translate="promotions">Акции</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/price"  data-translate="delivery">Доставка</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/index" data-translate="about-us">О нас</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="/contacts" data-translate="contacts">Контакты</a>
+              </li>
+              <div class="header__top mobile-flex">
+              <select  
+              data-json="about"
+              class="dropbtn__lang lang language-selector" style="width: 200px;">
+                <option
+                style="background-image:url(images/Hicon.png); background-repeat: no-repeat; padding-left: 29px; padding-top:-10px"
+                value="RUS" required>RUS
+              </option>
+              <option
+                style="background-image:url(images/Hicon.png); background-repeat: no-repeat; padding-left: 29px; padding-top:-10px"
+                value="ENG">ENG
+              </option>
+              </select>
+                <h3 class="phone">+ 7 (499) 490-51-07</h3>
+              </div>
+            </ul>
+          </nav>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="top__main">
+        <div class="container">
+          <h3 class="top__title">
+            <span class="top__title-name" data-translate="home">Главная</span>
+            <span class="top__title-contacts" data-translate="order-processing"> / Оформление заказа
+            </span>
+          </h3>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container">
+          <h3 class="guds__title" data-translate="order-processing">Оформление заказа</h3>
+          <div class="order__blog-wrap">
+            <div class="order__blog">
+              <h3 class="order__title" data-translate="personal-details">Личные данные</h3>
+              <form class="order__form" action="../../send.php" method="post">
+                <div class="inputBox__order">
+                  <label data-translate="full-name">ФИО</label>
+                  <input type="text" name="name" class="form__input" />
+                </div>
+                <div class="inputBox__order">
+                  <label data-translate="phone">Телефон</label>
+                  <input type="text" name="name" class="form__input" />
+                </div>
+                <div class="inputBox__order">
+                  <label data-translate="email">Email</label>
+                  <input type="text" name="name" class="form__input" />
+                </div>
+              </form>
+              <div class="order__content">
+                <h3 class="order__title order-name" data-translate="delivery-method">Способ доставки</h3>
+                <div class="order__content-wrap">
+                  <form class="order__form1" action="../../send.php" method="post">
+                    <div class="inputBox__order1">
+                      <input type="checkbox" name="name" class="form__input" />
+                      <label data-translate="pickup">Самовывоз</label>
+                    </div>
+                    <div class="inputBox__order1">
+                      <input type="checkbox" name="name" class="form__input" />
+                      <label data-translate="delivery-method-knock">Доставка</label>
+                    </div>
+                </div>
+                <p class="inputbox__city" data-translate="moscow-region">Москва и Московская область</p>
+    
+                <div class="order__content-wrapper">
+                  <form class="order__form" action="../../send.php" method="post">
+                    <div class="inputBox__order">
+                      <label data-translate="address">Адрес</label>
+                      <input type="text" name="name" class="form__input" />
+                    </div>
+                    <div class="inputBox__order">
+                      <label data-translate="postal-code">Индекс</label>
+                      <input type="text" name="name" class="form__input" />
+                    </div>
+                    <div class="inputBox__order">
+                      <label data-translate="comments">Комментарий</label>
+                      <input type="text" name="name" class="form__input" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="order__blog">
+              <div class="order-wrapper">
+                <h3 class="order__blog-name" data-translate="your-order">Ваш заказ</h3>
+                <img class="order__blog-img" src="images/order-1.png" alt="order" />
+                <div class="order__blog-container">
+                  <div class="order__blog-content">
+                    <h3 data-translate="items-total">Товаров на:</h3>
+                    <p>110 484 ₽</p>
+                  </div>
+                  <div class="order__blog-content">
+                    <h3 data-translate="vat">НДС:</h3>
+                    <p>48,54 ₽</p>
+                  </div>
+                  <div class="order__blog-content">
+                    <h3 data-translate="delivery-cost">Доставка:</h3>
+                    <p>500 ₽</p>
+                  </div>
+                  <div class="order__blog-content1">
+                    <h3 data-translate="total">Итого:</h3>
+                    <p>140 158 ₽</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buy__btn order-btn">
+                <a href="#" class="buy__basket-btn" data-translate="place-order">Оформить заказ</a>
+              </div>
+              <form class="order__form2" action="../../send.php" method="post">
+                <div class="inputBox__order2">
+                  <input type="checkbox" name="name" class="form__input" />
+                  <label data-translate="consent">Я согласен(на) на обработку персональных данных</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <a href="" data-translate="footer-logo">ХИМЛАБ</a>
+        </div>
+        <div class="footer__wrap">
+          <div class="footer__blog">
+            <h4 class="footer__blog-name" data-translate="address-title">Адрес:</h4>
+            <p class="footer__blog-descr" data-translate="address-description">115230, Москва, Каширское шоссе, дом 3, корпус 2, строение 4/9 (территория бизнес-центра "Сириус Парк"), ООО ТД “ХИМЛАБ”.</p>
+          </div>
+          <div class="footer__blog">
+            <h4 class="footer__blog-contacts" data-translate="contacts-title">Контакты:</h4>
+            <span class="footer__phone" data-translate="phone-moscow">+7 (499) 113-02-84</span>
+            <span class="footer__city" data-translate="city-moscow">(Москва)</span><br>
+            <span class="footer__phone ml-phone" data-translate="phone-spb">+7 (812) 605-00-61</span>
+            <span class="footer__city" data-translate="city-spb">(Санкт-Петербург)</span>
+          </div>
+          <div class="footer__blog-social">
+            <a href=""><img src="images/whatsapp.svg" alt="whatsapp" /></a>
+            <a href=""><img src="images/vk (2).svg" alt="vk" /></a>
+            <a href=""><img src="images/yla.svg" alt="yla" /></a>
+            <a href=""><img src="images/tel.svg" alt="tel" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/translate-info.js"></script>
+    <script>
+      /*
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.0006 0.833496C10.5028 0.833496 7.66725 3.66903 7.66725 7.16683V7.74783C7.15972 7.84801 6.6906 7.99104 6.24007 8.19757C4.89949 8.81213 3.7646 9.80029 2.97147 11.0436C2.49141 11.7961 2.20656 12.6379 1.98279 13.6648C1.76356 14.6709 1.58935 15.9252 1.36773 17.521L1.35545 17.6093C1.07024 19.6628 0.847285 21.268 0.779566 22.5611C0.71081 23.8739 0.793986 24.9679 1.18892 25.9723C1.83442 27.6139 3.02626 28.9828 4.56348 29.848C5.504 30.3773 6.57618 30.6102 7.88599 30.7227C9.17603 30.8335 10.7967 30.8335 12.8698 30.8335H15.1313C17.2045 30.8335 18.8251 30.8335 20.1152 30.7227C21.425 30.6102 22.4972 30.3773 23.4377 29.848C24.9749 28.9828 26.1668 27.6139 26.8122 25.9723C27.2072 24.9679 27.2904 23.8739 27.2216 22.5611C27.1539 21.268 26.9309 19.6627 26.6457 17.6092L26.6334 17.5209C26.4118 15.9252 26.2376 14.6709 26.0184 13.6648C25.7946 12.6379 25.5098 11.7961 25.0297 11.0436C24.2366 9.80029 23.1017 8.81213 21.7611 8.19757C21.3106 7.99104 20.8414 7.84801 20.3339 7.74783V7.16683C20.3339 3.66903 17.4984 0.833496 14.0006 0.833496ZM8.66725 14.8335C8.11497 14.8335 7.66725 14.3858 7.66725 13.8335V9.801C7.45008 9.86118 7.25539 9.93226 7.07352 10.0156C6.08265 10.4699 5.24382 11.2003 4.65759 12.1192C4.35498 12.5936 4.13528 13.1804 3.93694 14.0906C3.73593 15.013 3.57157 16.1915 3.34303 17.837C3.04983 19.9481 2.83953 21.4685 2.77683 22.6657C2.71465 23.853 2.80576 24.6188 3.0502 25.2405C3.52731 26.4538 4.40824 27.4656 5.54445 28.1051C6.12656 28.4327 6.87256 28.6283 8.05714 28.73C9.25157 28.8326 10.7865 28.8335 12.9178 28.8335H15.0834C17.2147 28.8335 18.7496 28.8326 19.944 28.73C21.1286 28.6283 21.8746 28.4327 22.4567 28.1051C23.5929 27.4656 24.4739 26.4538 24.951 25.2405C25.1954 24.6188 25.2865 23.853 25.2243 22.6657C25.1616 21.4685 24.9513 19.9481 24.6581 17.837C24.4296 16.1915 24.2652 15.013 24.0642 14.0906C23.8659 13.1804 23.6462 12.5936 23.3436 12.1192C22.7573 11.2003 21.9185 10.4699 20.9277 10.0156C20.7458 9.93226 20.5511 9.86118 20.3339 9.801V13.8335C20.3339 14.3858 19.8862 14.8335 19.3339 14.8335C18.7816 14.8335 18.3339 14.3858 18.3339 13.8335V9.54015C17.4888 9.50084 16.4457 9.50016 15.0834 9.50016H12.9178C11.5555 9.50016 10.5124 9.50084 9.66725 9.54015V13.8335C9.66725 14.3858 9.21954 14.8335 8.66725 14.8335ZM15.1438 7.50016C16.3969 7.50015 17.4434 7.50014 18.3339 7.53837V7.16683C18.3339 4.7736 16.3938 2.8335 14.0006 2.8335C11.6073 2.8335 9.66725 4.7736 9.66725 7.16683V7.53837C10.5578 7.50014 11.6043 7.50015 12.8574 7.50016H15.1438Z"
+                  fill="#121212" />*/
+    </script>
+
+</html>

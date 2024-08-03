@@ -1,0 +1,54 @@
+/* %interbold-700 {
+  font-family: "Inter-Bold";
+  font-weight: 700;
+}
+%interbolditalic-700 {
+  font-family: "Inter-BoldItalic";
+  font-weight: 700;
+}
+%interextrabold-800 {
+  font-family: "Inter-ExtraBold";
+  font-weight: 800;
+}
+%interextrabolditalic-800 {
+  font-family: "Inter-ExtraBoldItalic";
+  font-weight: 800;
+} */
+@font-face {
+  font-family: "Firasans-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Firasansmedium.woff2) format(woff2), url(../fonts/Firasansmedium.woff) format(woff);
+}
+@font-face {
+  font-family: "Firasans-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Firasansregular.woff2) format(woff2), url(../fonts/Firasansregular.woff) format(woff);
+}
+@font-face {
+  font-family: "Firasans-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Firasanssemibold.woff2) format(woff2), url(../fonts/Firasanssemibold.woff) format(woff);
+}
+/* @font-face {
+  font-family: "Inter-Bold";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Inter-Bold.woff2) format(woff2),
+    url(../fonts/Inter-Bold.woff) format(woff);
+} */
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: "Firasans-Regular";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1588px;
+  margin: 0 auto;
+  padding: 0 30px;
+}

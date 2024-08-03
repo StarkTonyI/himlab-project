@@ -1,0 +1,6 @@
+PassengerStartupFile server.js
+PassengerResolveSymlinksInDocumentRoot on
+Require all granted
+PassengerAppType node
+PassengerAppRoot /home/a0947686/domains/gigacoder.ru/public_html/
+Options -MultiViews
